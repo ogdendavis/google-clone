@@ -43,9 +43,11 @@ body {
 
 .search-bar:hover, .search-bar:focus {
   box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
 }
 
-.src-button {
+.search-button {
   background-color: rgb(242, 242, 242);
   border: 1px solid rgb(242, 242, 242);
   border-radius: 2px;
@@ -57,6 +59,13 @@ body {
   margin: 11px 4px;
   padding: 0 16px;
   text-align: center;
+
+}
+
+.search-button:hover {
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  color: black;
 }
 
 #logo {
