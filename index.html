@@ -5,6 +5,7 @@
   <meta name="description" content="A clone of the Google homepage">
   <meta name="author" content="Lucas Ogden-Davis">
   <title>Google(?)</title>
+  <link href="images/googleg_lodp.ico" rel="shortcut icon" type="image/x-icon">
   <link href="styles/main.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -40,10 +41,10 @@
       <img id="logo" src="images/googlelogo.png" alt="The classic multicolor Google logo">
     </div>
     <div class="search-area">
-      <input type="search" class="search-bar"></input>
+      <input type="search" class="search-bar" id="field"></input>
       <div class="buttons">
-        <button class="search-button">Google Search</button>
-        <button class="search-button">I'm Feeling Lucky</button>
+        <button class="search-button" id="search">Google Search</button>
+        <button class="search-button" id="lucky">I'm Feeling Lucky</button>
       </div>
     </div>
   </main>
@@ -62,5 +63,6 @@
   </footer>
 </div>
 
+<script src="search.js" type="text/javascript"></script>
 </body>
 </html>
