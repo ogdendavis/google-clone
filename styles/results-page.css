@@ -1,0 +1,22 @@
+/* This file is to supplement main.css (created for index, but used for index and results-page) so that results-page displays properly. Some main.css rules are overridden, and new rules are added */
+
+/* Header */
+header {
+  background: var(--button-color);
+  height: 60px;
+  padding-top: 16px;
+  top: 0;
+}
+
+.below {
+  position: absolute;
+  top: 80px;
+}
+
+.search-bar {
+  background: url("../images/search-icon.svg") no-repeat;
+  background-color: #fff;
+  background-position: right 16px center;
+  background-size: 24px;
+  padding-right: 56px;
+}
