@@ -17,9 +17,9 @@ header {
 }
 
 .header-right {
-  float: right;
   padding: 0 30px;
-  position: relative;
+  position: absolute;
+  right: 0;
   text-align: right;
 }
 
@@ -34,6 +34,7 @@ header {
   background-size: 24px;
   padding-right: 56px;
   width: 632px;
+  z-index: 1;
 }
 
 /* results types */
