@@ -1,0 +1,104 @@
+/* Main search area, including logo, search bar, and buttons */
+
+main {
+  width: var(--content-width);
+  height: 233px;
+  margin: 89px auto;
+}
+
+.buttons {
+  margin-top: 18px;
+  text-align: center;
+  width: var(--content-width);
+}
+
+.logo-area {
+  height: 233px;
+  padding-top: 109px;
+}
+
+.search-area {
+  width: var(--content-width);
+  height: 101px;
+  margin-top: 40px;
+}
+
+.search-button {
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 2px;
+  color: var(--light-text);
+  font-weight: 700;
+  height: 36px;
+  line-height: 27px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.search-button:hover {
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  color: var(--dark-text);
+}
+
+#logo {
+  display: block;
+  height: 92px;
+  margin: auto;
+  padding-top: 109px;
+  width: 272px;
+}
+
+/* Header and Footer */
+
+header, footer {
+  color: var(--dark-text);
+}
+
+/* Header only */
+
+header {
+  height: 30px;
+  top: 12px;
+}
+
+.right-nav ul li img {
+  border-radius: 50%;
+}
+
+.left-nav, .left-footer {
+  margin: 7px 0 0 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.right-nav, .right-footer {
+  float: right;
+  margin: 11px 29px 0 0;
+  position: relative;
+  text-align: right;
+}
+
+/* Footer only */
+
+footer {
+  background: var(--button-color);
+  border-top: 1px solid rgb(228, 228, 228);
+  bottom: 0;
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 8px;
+}
+
+#footer-container {
+  height: 100vh;
+  min-height: 505px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
