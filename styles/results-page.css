@@ -1,20 +1,29 @@
+body {
+  --selected-blue: #1a73e8;
+}
 
 /* Header */
 header {
   background: var(--button-color);
   height: 60px;
   padding-top: 16px;
-  top: 0;
+  position: relative;
 }
 
-.header-right-top {
+.header-left {
+  float: left;
+  position: absolute;
+  text-align: left;
+}
+
+.header-right {
   float: right;
   padding: 0 30px;
   position: relative;
   text-align: right;
 }
 
-.header-right-top img {
+.header-right img {
   border-radius: 50%;
 }
 
@@ -24,4 +33,67 @@ header {
   background-position: right 16px center;
   background-size: 24px;
   padding-right: 56px;
+  width: 632px;
+}
+
+/* results types */
+
+.results-types {
+  background: var(--button-color);
+  color: var(--light-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 20px 10px 150px;
+}
+
+.results-types ul li:hover {
+  color: var(--dark-text);
+  text-decoration: none;
+}
+
+.settings-tools {
+  position: relative;
+  text-align: right;
+  width: 632px;
+}
+
+.types {
+  position: absolute;
+  z-index: 1;
+}
+
+#all {
+  font-weight: 700;
+  color: var(--selected-blue);
+}
+
+#tool-button {
+  padding-left: 25px;
+}
+
+#tool-button-outline {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(0,0,0,0.2);;
+  border-radius: 2px;
+  height: 30px;
+  position: absolute;
+  right: -15px;
+  top: -10px;
+  visibility: hidden;
+  width: 60px;
+}
+
+#tool-button:hover #tool-button-outline {
+  visibility: visible;
+}
+
+#underline {
+  background: var(--selected-blue);
+  height: 3px;
+  width: 100px;
+  position: relative;
+  bottom: -50px;
+  width: 45px;
 }
