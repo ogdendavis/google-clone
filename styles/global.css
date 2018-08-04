@@ -8,6 +8,7 @@ body {
   --content-width: 980px;
   --dark-text: rgb(51, 51, 51);
   --green-text: rgb(0, 102, 33);
+  --header-color: rgb(250, 250, 250);
   --light-text: rgb(117, 117, 117);
 }
 

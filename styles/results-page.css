@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-  background: var(--button-color);
+  background: var(--header-color);
   height: 60px;
   padding-top: 16px;
   position: relative;
@@ -48,13 +48,14 @@ header {
 /* results types */
 
 .results-types {
-  background: var(--button-color);
+  background: var(--header-color);
+  border-bottom: 1px solid var(--button-color);
   color: var(--light-text);
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  padding: 10px 20px 10px 150px;
+  padding: 10px 20px 0 150px;
 }
 
 .results-types ul li:hover {
@@ -100,10 +101,9 @@ header {
 
 #underline {
   background: var(--selected-blue);
+  bottom: -41px;
   height: 3px;
-  width: 100px;
   position: relative;
-  bottom: -50px;
   width: 45px;
 }
 
@@ -121,6 +121,7 @@ main > div {
 
 .results-info {
   color: var(--light-text);
+  padding-top: 6px;
 }
 
 /* featured result */
