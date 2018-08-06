@@ -175,3 +175,80 @@ main > div {
   color: var(--green-text);
   font-size: 14px;
 }
+
+/* Videos */
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  height: 94px;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.video {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 2px;
+  box-shadow: rgba(0,0,0,0.08) 0 2px 2px 1px;
+  -moz-box-shadow: rgba(0,0,0,0.08) 0 2px 2px 1px;
+  -webkit-box-shadow: rgba(0,0,0,0.08) 0 2px 2px 1px;
+  display: inline-block;
+  width: 205px;
+}
+
+.video-info {
+  padding: 0 16px 16px 16px;
+}
+
+.video-date, .video-user {
+  color: var(--light-text);
+}
+
+.video-published {
+  padding: 2px 0;
+}
+
+.video-source {
+  color: var(--green-text);
+}
+
+.videos-scroller {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -20px;
+  position: relative;
+  width: 640px;
+}
+
+.videos {
+  margin-top: 40px;
+}
+
+#more-videos {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  height: 36px;
+  justify-content: center;
+  position: absolute;
+  top: 128px;
+  right: -18px;
+  width: 36px;
+}
+
+#more-videos img {
+  margin: auto;
+}
