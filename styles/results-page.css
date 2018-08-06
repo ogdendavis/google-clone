@@ -252,3 +252,61 @@ h1 {
 #more-videos img {
   margin: auto;
 }
+
+/* Main results */
+
+.main-results h1 {
+  margin-bottom: 6px;
+}
+
+.result {
+  margin-bottom: 26px;
+}
+
+.result:last-child {
+  margin-bottom: 0;
+}
+
+.result-url {
+  color: var(--green-text);
+  font-size: 14px;
+}
+
+.result-date {
+  color: var(--light-text);
+}
+
+.result-description {
+  color: var(--dark-text);
+}
+
+.result-text {
+  line-height: 18.2px;
+}
+
+/* related searches */
+
+.related-list {
+  font-size: 14px;
+  line-height: 20px;
+  width: 600px;
+}
+
+.related-list li {
+  padding: 3px 0;
+}
+
+.related-searches {
+  position: relative;
+}
+
+.left-col, .right-col {
+  display: inline-block;
+  width: 300px;
+}
+
+.right-col {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
