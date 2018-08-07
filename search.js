@@ -5,16 +5,26 @@ const field = document.getElementById('field');
 
 const goToGoogle = () => {
   if (confirm('Taking you to the \'real\' Google, now...')) {
-    window.location = "https://www.google.com/";
+    window.location = 'https://www.google.com/';
   }
   return false;
 }
 
-const lmgtfy = () => {
-  if (!field.value) {
-    return false;
+const lmgtfy = (event) => {
+  if (event.target.id === 'search') {
+    if (field.value === '') {
+      alert('You have to type something, silly.');
+    }
+    else if (field.value === 'how to eat a pickle') {
+      window.location = 'results-page.html';
+    }
+    else {
+      window.location = `http://lmgtfy.com/?q=${field.value.replace(/\s/g, '+')}`;
+    }
   }
-  window.location = `http://lmgtfy.com/?q=${field.value.replace(/\s/g, '+')}`;
+  else {
+    window.location = 'results-page.html';
+  }
 }
 
 const keyScreen = (event) => {
